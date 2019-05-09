@@ -1,0 +1,234 @@
+<!-- 
+    Chaos
+    An art project made by Fairuza Pamenan
+    from the Gerrit Rietveld Academie
+    Last modified: 09-05-2019
+-->
+
+<!doctype html>
+<html>
+<head>
+    <title>Chaos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var links = [
+                "http://designblog.rietveldacademie.nl/",
+                "http://designblog.rietveldacademie.nl/?tag=willemijn-de-greef",
+                "http://designblog.rietveldacademie.nl/?tag=visual-guide",
+                "http://designblog.rietveldacademie.nl/?tag=screen",
+                "http://designblog.rietveldacademie.nl/?tag=sleep-mode",
+                "http://designblog.rietveldacademie.nl/?tag=colorconsequence",
+                "http://designblog.rietveldacademie.nl/?tag=paul-rand",
+                "http://designblog.rietveldacademie.nl/?tag=life-art",
+                "http://designblog.rietveldacademie.nl/?tag=compositie",
+                "http://designblog.rietveldacademie.nl/?tag=saddle-chair",
+                "http://designblog.rietveldacademie.nl/?tag=ecal",
+                "http://designblog.rietveldacademie.nl/?tag=active-reading",
+                "http://designblog.rietveldacademie.nl/?tag=future",
+                "http://designblog.rietveldacademie.nl/?tag=mad",
+                "http://designblog.rietveldacademie.nl/?tag=futurelights",
+                "http://designblog.rietveldacademie.nl/?tag=haptic",
+                "http://designblog.rietveldacademie.nl/?tag=lingua-franca",
+                "http://designblog.rietveldacademie.nl/?tag=hitchhike",
+                "http://designblog.rietveldacademie.nl/?tag=riita-ikonen",
+                "http://designblog.rietveldacademie.nl/?tag=bulgakov",
+                "http://designblog.rietveldacademie.nl/?tag=texting",
+                "http://designblog.rietveldacademie.nl/?tag=labyrinthine-space",
+                "http://designblog.rietveldacademie.nl/?tag=van-abbemuseum",
+                "http://designblog.rietveldacademie.nl/?tag=sharing-tt",
+                "http://designblog.rietveldacademie.nl/?tag=cliche",
+                "http://designblog.rietveldacademie.nl/?tag=laratorres",
+                "http://designblog.rietveldacademie.nl/?tag=sculpture",
+                "http://designblog.rietveldacademie.nl/?tag=honest-consumer",
+                "http://designblog.rietveldacademie.nl/?tag=handicap",
+                "http://designblog.rietveldacademie.nl/?tag=boogie-woogie",
+                "http://designblog.rietveldacademie.nl/?tag=adriaan-frutiger",
+                "http://designblog.rietveldacademie.nl/?tag=careless-design",
+                "http://designblog.rietveldacademie.nl/?tag=digital-folkore",
+                "http://designblog.rietveldacademie.nl/?tag=sacred",
+                "http://designblog.rietveldacademie.nl/?tag=diana-orving",
+                "http://designblog.rietveldacademie.nl/?tag=net-art",
+                "http://designblog.rietveldacademie.nl/?tag=bas-van-beek",
+                "http://designblog.rietveldacademie.nl/?tag=clothing",
+                "http://designblog.rietveldacademie.nl/?tag=interesting",
+                "http://designblog.rietveldacademie.nl/?tag=depiction",
+                "http://designblog.rietveldacademie.nl/?tag=or",
+                "http://designblog.rietveldacademie.nl/?tag=conventions",
+                "http://designblog.rietveldacademie.nl/?tag=freedom",
+                "http://designblog.rietveldacademie.nl/?tag=judith-kleinemeier",
+                "http://designblog.rietveldacademie.nl/?tag=booklove",
+                "http://designblog.rietveldacademie.nl/?tag=corporation",
+                "http://designblog.rietveldacademie.nl/?tag=fast-chairs",
+                "http://designblog.rietveldacademie.nl/?tag=0-dimension",
+                "http://designblog.rietveldacademie.nl/?tag=flaneur",
+                "http://designblog.rietveldacademie.nl/?tag=rebel",
+                "http://designblog.rietveldacademie.nl/?tag=pulling-pushing",
+                "http://designblog.rietveldacademie.nl/?tag=walking",
+                "http://designblog.rietveldacademie.nl/?tag=equidistance",
+                "http://designblog.rietveldacademie.nl/?tag=3dgun",
+                "http://designblog.rietveldacademie.nl/?tag=morale",
+                "http://designblog.rietveldacademie.nl/?tag=transcendens",
+                "http://designblog.rietveldacademie.nl/?tag=magazine",
+                "http://designblog.rietveldacademie.nl/?tag=engineering",
+                "http://designblog.rietveldacademie.nl/?tag=respect",
+                "http://designblog.rietveldacademie.nl/?tag=confession",
+                "http://designblog.rietveldacademie.nl/?tag=methods",
+                "http://designblog.rietveldacademie.nl/?tag=cellophane",
+                "http://designblog.rietveldacademie.nl/?tag=dew",
+                "http://designblog.rietveldacademie.nl/?tag=superarchitecture",
+                "http://designblog.rietveldacademie.nl/?tag=instinctive",
+                "http://designblog.rietveldacademie.nl/?tag=emergence",
+                "http://designblog.rietveldacademie.nl/?tag=color-system",
+                "http://designblog.rietveldacademie.nl/?tag=interpretation",
+                "http://designblog.rietveldacademie.nl/?tag=francis-alys",
+                "http://designblog.rietveldacademie.nl/?tag=scriptographer",
+                "http://designblog.rietveldacademie.nl/?tag=water",
+                "http://designblog.rietveldacademie.nl/?tag=blowing",
+                "http://designblog.rietveldacademie.nl/?tag=bbc",
+                "http://designblog.rietveldacademie.nl/?tag=gielijn-escher",
+                "http://designblog.rietveldacademie.nl/?tag=strangers",
+                "http://designblog.rietveldacademie.nl/?tag=red-carpet",
+                "http://designblog.rietveldacademie.nl/?tag=transgenic",
+                "http://designblog.rietveldacademie.nl/?tag=minorities",
+                "http://designblog.rietveldacademie.nl/?tag=shade",
+                "http://designblog.rietveldacademie.nl/?tag=hundred-years",
+                "http://designblog.rietveldacademie.nl/?tag=massin",
+                "http://designblog.rietveldacademie.nl/?tag=ineke-hans",
+                "http://designblog.rietveldacademie.nl/?tag=deepwater",
+                "http://designblog.rietveldacademie.nl/?tag=keshavjeetavelli",
+                "http://designblog.rietveldacademie.nl/?tag=swiss-type",
+                "http://designblog.rietveldacademie.nl/?tag=mies-van-de-rohe",
+                "http://designblog.rietveldacademie.nl/?tag=best",
+                "http://designblog.rietveldacademie.nl/?tag=web-journal",
+                "http://designblog.rietveldacademie.nl/?tag=flux",
+                "http://designblog.rietveldacademie.nl/?tag=practical-clothing",
+                "http://designblog.rietveldacademie.nl/?tag=matchmaking",
+                "http://designblog.rietveldacademie.nl/?tag=erudition",
+                "http://designblog.rietveldacademie.nl/?tag=innovation",
+                "http://designblog.rietveldacademie.nl/?tag=contemporary",
+                "http://designblog.rietveldacademie.nl/?tag=abnormal",
+                "http://designblog.rietveldacademie.nl/?tag=juxtapose",
+                "http://designblog.rietveldacademie.nl/?tag=yellow",
+                "http://designblog.rietveldacademie.nl/?tag=chick",
+                "http://designblog.rietveldacademie.nl/?tag=body",
+                "http://designblog.rietveldacademie.nl/?tag=shades-of-blue",
+                "http://designblog.rietveldacademie.nl/?tag=popova",
+                "http://designblog.rietveldacademie.nl/?tag=efficiency",
+                "http://designblog.rietveldacademie.nl/?tag=david-bennewith",
+                "http://designblog.rietveldacademie.nl/?tag=typewriter",
+                "http://designblog.rietveldacademie.nl/?tag=individual",
+                "http://designblog.rietveldacademie.nl/?tag=studio80",
+                "http://designblog.rietveldacademie.nl/?tag=invisible",
+                "http://designblog.rietveldacademie.nl/?tag=paper-porcelain",
+                "http://designblog.rietveldacademie.nl/?tag=hidden-view",
+                "http://designblog.rietveldacademie.nl/?tag=abruzzes",
+                "http://designblog.rietveldacademie.nl/?tag=understand",
+                "http://designblog.rietveldacademie.nl/?tag=mystical-beast",
+                "http://designblog.rietveldacademie.nl/?tag=small",
+                "http://designblog.rietveldacademie.nl/?tag=food-culture",
+                "http://designblog.rietveldacademie.nl/?tag=abstruse",
+                "http://designblog.rietveldacademie.nl/?tag=vegetables",
+                "http://designblog.rietveldacademie.nl/?tag=essay",
+                "http://designblog.rietveldacademie.nl/?tag=vulnerable-forms",
+                "http://designblog.rietveldacademie.nl/?tag=dutch-design",
+                "http://designblog.rietveldacademie.nl/?tag=mariko-mori",
+                "http://designblog.rietveldacademie.nl/?tag=revalue",
+                "http://designblog.rietveldacademie.nl/?tag=japanese",
+                "http://designblog.rietveldacademie.nl/?tag=modification",
+                "http://designblog.rietveldacademie.nl/?tag=skor",
+                "http://designblog.rietveldacademie.nl/?tag=casio",
+                "http://designblog.rietveldacademie.nl/?tag=illegalemotions",
+                "http://designblog.rietveldacademie.nl/?tag=conspiracy",
+                "http://designblog.rietveldacademie.nl/?tag=mystery",
+                "http://designblog.rietveldacademie.nl/?tag=publishing",
+                "http://designblog.rietveldacademie.nl/?tag=kelloggs",
+                "http://designblog.rietveldacademie.nl/?tag=fabulation",
+                "http://designblog.rietveldacademie.nl/?tag=dog",
+                "http://designblog.rietveldacademie.nl/?tag=huis",
+                "http://designblog.rietveldacademie.nl/?tag=growing",
+                "http://designblog.rietveldacademie.nl/?tag=524",
+                "http://designblog.rietveldacademie.nl/?tag=lightshadow",
+                "http://designblog.rietveldacademie.nl/?tag=israel",
+                "http://designblog.rietveldacademie.nl/?tag=library",
+                "http://designblog.rietveldacademie.nl/?tag=sleep-mode",
+                "http://designblog.rietveldacademie.nl/?tag=proud",
+                "http://designblog.rietveldacademie.nl/?tag=corporation",
+                "http://designblog.rietveldacademie.nl/?tag=stress",
+                "http://designblog.rietveldacademie.nl/?tag=easier",
+                "http://designblog.rietveldacademie.nl/?tag=gerrit-rietveld-academie",
+                "http://designblog.rietveldacademie.nl/?tag=knitknot",
+                "http://designblog.rietveldacademie.nl/?tag=slim",
+                "http://designblog.rietveldacademie.nl/?tag=pipe",
+                "http://designblog.rietveldacademie.nl/?tag=advertisement",
+                "http://designblog.rietveldacademie.nl/?tag=doll-hospital",
+                "http://designblog.rietveldacademie.nl/?tag=no-time",
+                "http://designblog.rietveldacademie.nl/?tag=cellophane",
+                "http://designblog.rietveldacademie.nl/?tag=lamp",
+                "http://designblog.rietveldacademie.nl/?tag=school",
+                "http://designblog.rietveldacademie.nl/?tag=minies",
+                "http://designblog.rietveldacademie.nl/?tag=user",
+                "http://designblog.rietveldacademie.nl/?tag=michel-schuurman",
+                "http://designblog.rietveldacademie.nl/?tag=hauntology",
+                "http://designblog.rietveldacademie.nl/?tag=constructed",
+                "http://designblog.rietveldacademie.nl/?tag=difference",
+                "http://designblog.rietveldacademie.nl/?tag=intentional-stance"
+            ];
+            
+            
+            function runChaosA(){
+                var randnoA = Math.floor(Math.random() * links.length);
+                $(".kaderA").prepend($("<a></a>").attr("href",links[randnoA])
+                    .text(links[randnoA]));
+            }
+            setInterval(runChaosA,750);
+
+            function runChaosB(){
+                var randnoB = Math.floor(Math.random() * links.length);
+                $(".kaderB").prepend($("<a></a>").attr("href",links[randnoB])
+                    .text(links[randnoB]));
+            }
+            setInterval(runChaosB,500);   
+        });
+    </script>
+    <style>
+        .kaderB a {
+            color: rgb(68, 67, 68);
+        }
+        .kaderA a {
+            color: rgb(95, 118, 133);
+        }
+        .kaderB {
+            width: 120%;
+        }
+        .kaderA {
+            position: fixed;
+            text-align: center;
+            top: 100px;
+            left: 20%;
+            border: solid 7px rgb(245, 198, 198);
+            height: 450px;
+            /* margin-top: 100px;
+            margin-left: 20%; */
+            margin-right: 20%;
+            overflow: hidden;
+        }
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: rgb(245, 198, 198);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kaderB"></div>
+    <div class="kaderA"></div>
+    <div class="copyright">
+        <p> site design &copy; 2019 Fairuza Pamenan</p>
+    </div>
+</body>
+</html>
