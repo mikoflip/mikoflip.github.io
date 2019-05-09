@@ -1,7 +1,8 @@
 <!-- 
     Chaos
     An art project made by Fairuza Pamenan
-    from the Gerrit Rietveld Academie
+    from Gerrit Rietveld Academie
+
     Last modified: 09-05-2019
 -->
 
@@ -175,7 +176,6 @@
                 "http://designblog.rietveldacademie.nl/?tag=intentional-stance"
             ];
             
-            
             function runChaosA(){
                 var randnoA = Math.floor(Math.random() * links.length);
                 $(".kaderA").prepend($("<a></a>").attr("href",links[randnoA])
@@ -191,6 +191,7 @@
             setInterval(runChaosB,500);   
         });
     </script>
+    
     <style>
         .kaderB a {
             color: rgb(68, 67, 68);
