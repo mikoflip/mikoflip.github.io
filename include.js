@@ -40,7 +40,7 @@ $(function(){
     var i = word[1], j = word[2];
     for(var k = 0; k < word[4].length; k++){
       $("#_"+i+"_"+j).attr("disabled", false).addClass("required").addClass("answer_"+word[0].toString());
-      $("#_"+i+"_"+j).attr("value", word[4][k]); //remove
+      // $("#_"+i+"_"+j).attr("value", word[4][k]); //remove
       if(word[3] == 0) j++;
       else i++;
     }
