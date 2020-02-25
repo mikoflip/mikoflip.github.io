@@ -1,0 +1,118 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+h1, h3, p {
+  font: italic 1.2em "Fira Sans", serif;
+  color: white;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+}
+
+#letters {
+  font-size: 10em;
+  text-align: center;
+}
+
+#solution {
+  display: block;
+  margin : 0 auto;
+  width: 4em;
+
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 2em;
+}
+
+#buttons {
+  margin: 10px;
+  text-align: center;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background: white; */
+}
+
+#canvas {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  border: 1px dashed;
+}
+
+#puzzle_container {
+  margin: auto;
+  margin-top: 120px;
+  width: 50%;
+  background-color: black;
+}
+
+#puzzle {
+  position: center;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.cells {
+  background-color: black;
+}
+
+
+[class*="answer_"] {
+  background-color: white;
+}
+
+.grey {
+  background-color: grey;
+}
+
+#hints_container {
+  float: left;
+}
+
+#horizontal {
+  position: fixed;
+  top: 50px;
+  left: 200px;
+}
+
+#vertical {
+  position: fixed;
+  top: 220px;
+  right: 120px;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.images {
+  position: fixed;
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  /* text-align: center; */
+  height: 80%;
+}
