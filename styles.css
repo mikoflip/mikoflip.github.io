@@ -97,7 +97,7 @@ h1, h3, p {
   top: 220px;
   right: 120px;
 
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   text-orientation: upright;
 }
 

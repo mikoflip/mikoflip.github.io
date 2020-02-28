@@ -30,10 +30,11 @@ $(function(){
     [ 13, 11, 17, 0, "kartini"       , "eerste Indonesische feminist"                         ],
     [ 14, 13, 11, 0, "goud"          , "Aurum"                                                ],
     [ 15, 13, 17, 0, "knil"          , "Koninklijk Nederlands Indisch Leger (afk.)"           ],
-    [ 16, 14, 15, 1, "voc"           , "Verenigd Oost-Indisch Compagnie (afk.)"               ],
-    [ 17, 16,  1, 0, "edelstenen"    , "kostbare gesteenten"                                  ],
-    [ 18, 16, 12, 0, "educatie"      , "onderwijs"                                            ],
-    [ 19, 18,  9, 0, "ereschuld"     , "morele verplichting"                                  ],
+    [ 16, 13, 18, 1, "njai"          , "inheems concubine"                                    ],
+    [ 17, 14, 15, 1, "voc"           , "Verenigd Oost-Indisch Compagnie (afk.)"               ],
+    [ 18, 16,  1, 0, "edelstenen"    , "kostbare gesteenten"                                  ],
+    [ 19, 16, 12, 0, "educatie"      , "onderwijs"                                            ],
+    [ 20, 18,  9, 0, "ereschuld"     , "morele verplichting"                                  ],
   ];
 
   crosswords.forEach(word => {
